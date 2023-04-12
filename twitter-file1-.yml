@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: A sample template
+Resources:
+  APPserver:
+    Type: "AWS::EC2::Instance"
+    Properties: 
+      ImageId: "ami-0747e613a2a1ff483"
+      InstanceType: t2.micro      
+      BlockDeviceMappings:
+        -
+        - DeviceName: /dev/xvda
+          Ebs:
+            VolumeType: gp2            
+            DeleteOnTermination: true
+            VolumeSize: 8
