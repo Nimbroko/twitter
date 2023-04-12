@@ -13,3 +13,26 @@ Resources:
             VolumeType: gp2            
             DeleteOnTermination: true
             VolumeSize: 8
+lead on the LogicalID:
+    Type: AWS::Timestream::Database
+    Properties:
+      DatabaseName: "String"
+      KmsKeyId: "String"
+      Tags: 
+        Tags
+  
+=======
+  userpwd: george o
+    SecurityGroup:
+      Type: AWS::EC2::SecurityGroup
+      Properties:
+        GroupDescription: SecurityGroup
+        VpcId: vpc-id
+        SecurityGroupIngress:
+          - IpProtocol: 
+            FromPort: 
+            ToPort: 
+            CidrIp: 
+        Tags:
+          - Key: Name
+            Value: SecurityGroup
